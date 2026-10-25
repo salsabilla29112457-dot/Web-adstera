@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Container pemutar video */
+        .video-container {
+            width: 100%;
+            max-width: 500px;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 40px;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Area lingkaran Play */
+        .play-wrapper {
+            position: relative;
+            width: 180px;
+            height: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .play-button {
+            width: 160px;
+            height: 160px;
+            background-color: #e62143;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 35px rgba(230, 33, 67, 0.6);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .play-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 45px rgba(230, 33, 67, 0.8);
+        }
+
+        /* Segitiga tombol play */
+        .play-icon {
+            width: 0;
+            height: 0;
+            border-top: 25px solid transparent;
+            border-bottom: 25px solid transparent;
+            border-left: 42px solid #fff;
+            margin-left: 8px;
+        }
+
+        /* Teks petunjuk di bawah tombol */
+        .instruction-text {
+            font-size: 15px;
+            color: #ccc;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Custom Video Controls Bar Dummy */
+        .video-controls {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding-bottom: 15px;
+        }
+
+        .progress-bar-bg {
+            width: 100%;
+            height: 3px;
+            background-color: #555;
+            position: relative;
+        }
+
+        .progress-bar-fill {
+            width: 0%;
+            height: 100%;
+            background-color: #e62143;
+        }
+
+        .controls-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #aaa;
+            font-size: 13px;
+        }
+
+        .controls-left, .controls-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        /* Icon kontrol sederhana */
+        .icon-play {
+            width: 0;
+            height: 0;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-left: 10px solid #aaa;
+        }
+
+        /* Bagian teks bawah */
+        .content-section {
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content-section h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .content-section p {
+            font-size: 14px;
+            line-height: 1.4;
+            color: #ddd;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Area Video yang Mengarah ke Smartlink Adsterra -->
+    <a href="https://auctionr.org/4/fc6b71bc9962f254d0fec8601db9c775" target="_blank" class="video-container">
+        
+        <!-- Tombol Play Merah -->
+        <div class="play-wrapper">
+            <div class="play-button">
+                <div class="play-icon"></div>
+            </div>
+        </div>
+
+        <!-- Teks Instruksi -->
+        <div class="instruction-text">
+            <span>&#9654;</span> Klik tombol untuk memutar video
+        </div>
+
+        <!-- Bar Kontrol Video -->
+        <div class="video-controls">
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill"></div>
+            </div>
+            <div class="controls-row">
+                <div class="controls-left">
+                    <div class="icon-play"></div>
+                    <span>00:00 / 00:00</span>
+                </div>
+                <div class="controls-right">
+                    <span>&#128065;</span>
+                    <span>&#9974;</span>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <!-- Bagian Teks "Welcome" -->
+    <div class="content-section">
+        <h1>Welcome</h1>
+        <p>This is an example web page.</p>
+        <p>The page is written in html, to see its markup and edit it click the edit button at the top of the screen.</p>
+        <p>You can open html, css and javascript files using the file manager.</p>
+        <p>To create new files use the menu at the top left of the screen.</p>
+    </div>
+
+</body>
+</html
